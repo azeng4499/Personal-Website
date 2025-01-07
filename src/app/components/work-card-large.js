@@ -5,17 +5,17 @@ import Image from "next/image";
 
 const ubuntu = Ubuntu({
   weight: "300",
-  subsets: ["serif"],
+  subsets: ["cyrillic"],
 });
 
 const ultra = Ultra({
   weight: "400",
-  subsets: ["serif"],
+  subsets: ["latin"],
 });
 
 const dm_serif = DM_Serif_Text({
   weight: "400",
-  subsets: ["serif"],
+  subsets: ["latin"],
 });
 
 const WorkCardLarge = ({ index, imagePath, title, date, details, buttons }) => {

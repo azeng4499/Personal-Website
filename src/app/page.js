@@ -37,42 +37,42 @@ import MenuBar from "./components/menu-bar";
 
 const ubuntu = Ubuntu({
   weight: "300",
-  subsets: ["serif"],
+  subsets: ["cyrillic"],
 });
 
 const sofadiOne = Sofadi_One({
   weight: "400",
-  subsets: ["serif"],
+  subsets: ["latin"],
 });
 
 const knewave = Knewave({
   weight: "400",
-  subsets: ["serif"],
+  subsets: ["latin"],
 });
 
 const tinos = Tinos({
   weight: "400",
-  subsets: ["serif"],
+  subsets: ["cyrillic"],
 });
 
 const alumniSansPinstripe = Alumni_Sans_Pinstripe({
   weight: "400",
-  subsets: ["serif"],
+  subsets: ["cyrillic"],
 });
 
 const barrio = Barrio({
   weight: "400",
-  subsets: ["serif"],
+  subsets: ["latin"],
 });
 
 const iceland = Iceland({
   weight: "400",
-  subsets: ["serif"],
+  subsets: ["latin"],
 });
 
 const dm_italic = DM_Serif_Text({
   weight: "400",
-  subsets: ["italic"],
+  subsets: ["latin"],
 });
 
 const fontArray = [

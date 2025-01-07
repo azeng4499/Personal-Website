@@ -4,26 +4,20 @@ import React, { useState } from "react";
 import { GPTGO_URL, PREPT_AI_URL, ISTEAM_URL } from "../constants";
 import Image from "next/image";
 import Navbar from "../components/navbar";
-import { Ubuntu } from "next/font/google";
 import { GoDash } from "react-icons/go";
 import MenuBar from "../components/menu-bar";
 
-import { DM_Serif_Text } from "next/font/google";
+import { Ubuntu, DM_Serif_Text } from "next/font/google";
 import "../globals.css";
-
-const ubuntuBold = Ubuntu({
-  weight: "500",
-  subsets: ["serif"],
-});
 
 const ubuntu = Ubuntu({
   weight: "300",
-  subsets: ["serif"],
+  subsets: ["cyrillic"],
 });
 
 const dm_serif = DM_Serif_Text({
   weight: "400",
-  subsets: ["serif"],
+  subsets: ["latin"],
 });
 
 const Page = () => {

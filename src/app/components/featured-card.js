@@ -1,10 +1,9 @@
 import React from "react";
 import Image from "next/image";
 import { Ubuntu } from "next/font/google";
-
 const ubuntuBold = Ubuntu({
   weight: "500",
-  subsets: ["serif"],
+  subsets: ["cyrillic"],
 });
 
 const FeaturedCard = ({ title, details, date, picturePath, url }) => {

@@ -5,12 +5,12 @@ import { GoDotFill } from "react-icons/go";
 
 const ubuntu = Ubuntu({
   weight: "300",
-  subsets: ["serif"],
+  subsets: ["cyrillic"],
 });
 
 const ubuntuBold = Ubuntu({
   weight: "500",
-  subsets: ["serif"],
+  subsets: ["cyrillic"],
 });
 
 const ExperienceCard = ({

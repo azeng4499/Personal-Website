@@ -5,7 +5,7 @@ import Link from "next/link";
 
 const ubuntu = Ubuntu({
   weight: "300",
-  subsets: ["serif"],
+  subsets: ["cyrillic"],
 });
 
 const MenuBar = ({ menuOpen, setMenuOpen }) => {

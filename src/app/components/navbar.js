@@ -8,7 +8,7 @@ import "../globals.css";
 
 const ubuntu = Ubuntu({
   weight: "300",
-  subsets: ["serif"],
+  subsets: ["cyrillic"],
 });
 
 const Navbar = ({ page = "home", setMenuOpen = null }) => {
