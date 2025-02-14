@@ -106,7 +106,9 @@ export default function Home() {
   const [fontIndex, setFontIndex] = useState(Math.floor(Math.random() * 7));
 
   useEffect(() => {
-    playFontAnimation();
+    if (typeof window !== "undefined") {
+      playFontAnimation();
+    }
   }, []);
 
   const playFontAnimation = async () => {

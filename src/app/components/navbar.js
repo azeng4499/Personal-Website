@@ -26,8 +26,10 @@ const Navbar = ({ page = "home", setMenuOpen = null }) => {
   };
 
   useEffect(() => {
-    window.addEventListener("scroll", handleScroll);
-    return () => window.removeEventListener("scroll", handleScroll);
+    if (typeof window !== "undefined") {
+      window.addEventListener("scroll", handleScroll);
+      return () => window.removeEventListener("scroll", handleScroll);
+    }
   }, []);
 
   return (
@@ -98,7 +100,7 @@ const Navbar = ({ page = "home", setMenuOpen = null }) => {
             >
               <div className="relative w-10 h-10">
                 <Image
-                  src="/website-logo.png"
+                  src="/aaron-zeng-favicon.png"
                   alt="logo"
                   fill
                   className="object-contain"
