@@ -66,7 +66,7 @@ const Page = () => {
                 <GoDash /> Javascript{" "}
                 <div className={`relative w-4 h-4 ${false && "grayscale"}`}>
                   <Image
-                    src="/Javascript-logo.png"
+                    src="/javascript-logo.png"
                     alt="logo"
                     fill
                     className="object-cover"
