@@ -43,11 +43,11 @@ const Navbar = ({ page = "home", setMenuOpen = null }) => {
             {page == "home" ? (
               <div
                 className="rounded-full overflow-hidden w-10 h-10"
-                style={{ backgroundColor: "rgba(255, 255, 255, 0.4)" }}
+                // style={{ backgroundColor: "rgba(255, 255, 255, 0.4)" }}
               >
                 <div className="relative w-10 h-10">
                   <Image
-                    src="/website-logo.png"
+                    src="/aaron-zeng-favicon.png"
                     alt="logo"
                     fill
                     className="object-contain"
