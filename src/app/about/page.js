@@ -66,7 +66,7 @@ const Page = () => {
                 <GoDash /> Javascript{" "}
                 <div className={`relative w-4 h-4 ${false && "grayscale"}`}>
                   <Image
-                    src="/javascript-logo.png"
+                    src="/js-logo.png"
                     alt="logo"
                     fill
                     className="object-cover"
@@ -187,7 +187,7 @@ const Page = () => {
               <GoDash /> Javascript{" "}
               <div className={`relative w-4 h-4 ${false && "grayscale"}`}>
                 <Image
-                  src="/javascript-logo.png"
+                  src="/js-logo.png"
                   alt="logo"
                   fill
                   className="object-cover"
