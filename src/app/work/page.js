@@ -44,7 +44,7 @@ const page = () => {
                 { url: GPTGO_URL_GH, name: "View Source Code" },
               ]}
             />
-            <WorkCardLarge
+            {/* <WorkCardLarge
               index="3"
               imagePath="/cxucoaching-demo.png"
               title="Cong Xu Coaching"
@@ -54,9 +54,9 @@ const page = () => {
                 { url: CXUCOACHING_URL, name: "Visit Page" },
                 { url: CXUCOACHING_URL_GH, name: "View Source Code" },
               ]}
-            />
+            /> */}
             <WorkCardLarge
-              index="4"
+              index="3"
               imagePath="/brickify-lab-demo.png"
               title="Brickify Lab"
               date="2022"

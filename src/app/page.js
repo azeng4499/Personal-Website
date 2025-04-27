@@ -181,15 +181,40 @@ export default function Home() {
             >
               I&apos;m a software engineer and designer based in College Park,
               Maryland. I currently work at JPMC, using machine learning to make
-              their customer support proccesses more efficent. I also created
+              their customer support processes more efficient. I also created
               Prept.Ai, a website that helps people prepare for interviews using
-              the power of Artifical Intelligence.
+              the power of Artificial Intelligence.
             </div>
             <div className="flex justify-start items-center gap-6 mt-10 text-gray-500 text-xl">
-              <FaLinkedin />
-              <FaGithub />
-              <FaInstagram />
-              <FaTiktok />
+              <FaLinkedin
+                onClick={() => {
+                  window.open(
+                    "https://www.linkedin.com/in/aaron-zeng-20338822b/",
+                    "__blank"
+                  );
+                }}
+              />
+              <FaGithub
+                onClick={() => {
+                  window.open("https://github.com/azeng4499", "__blank");
+                }}
+              />
+              <FaInstagram
+                onClick={() => {
+                  window.open(
+                    "https://www.instagram.com/aaron.zxng/",
+                    "__blank"
+                  );
+                }}
+              />
+              <FaTiktok
+                onClick={() => {
+                  window.open(
+                    "https://www.tiktok.com/@aaron.zxng?_t=ZT-8vt73AANCwA&_r=1",
+                    "__blank"
+                  );
+                }}
+              />
             </div>
           </div>
           <div className="w-full mt-8 text-gray-400 flex flex-col lg:flex-row">
