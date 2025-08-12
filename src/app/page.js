@@ -133,7 +133,7 @@ export default function Home() {
       <Head>
         <title>hello</title>
       </Head>
-      <div className="bg-black w-screen flex justify-center items-center">
+      <div className="bg-zinc-900 w-screen flex justify-center items-center">
         <div className="w-full max-w-[1225px] h-full bg-zinc-900">
           <MenuBar menuOpen={menuOpen} setMenuOpen={setMenuOpen} />
           <Navbar menuOpen={menuOpen} setMenuOpen={setMenuOpen} />

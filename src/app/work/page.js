@@ -20,7 +20,7 @@ const page = () => {
 
   return (
     <>
-      <div className="w-screen h-fit bg-black flex justify-center items-center">
+      <div className="w-screen h-fit bg-zinc-900 flex justify-center items-center">
         <div className="max-w-[1225px] h-full w-full max-w-[1225px] bg-zinc-900 flex overflow-hidden flex-col min-h-screen">
           <MenuBar menuOpen={menuOpen} setMenuOpen={setMenuOpen} />
           <Navbar page="about" menuOpen={menuOpen} setMenuOpen={setMenuOpen} />
