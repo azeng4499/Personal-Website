@@ -89,7 +89,7 @@ const getCurrentTime = () => {
   const now = new Date();
 
   const options = {
-    timeZone: "America/New_York",
+    timeZone: "America/Chicago",
     hour: "2-digit",
     minute: "2-digit",
     hour12: true,
@@ -142,7 +142,7 @@ export default function Home() {
               className={`text-base sm:text-lg flex justify-start items-center gap-2 ${ubuntu.className}`}
             >
               It is currently
-              <div className="font-bold">{getCurrentTime()}</div> in Maryland.
+              <div className="font-bold">{getCurrentTime()}</div> in Dallas, TX.
             </div>
             <div className="text-lg flex justify-start items-center gap-2 mt-16 h-24">
               <div className="flex flex-col text-[3rem] sm:text-[4rem] lg:text-[5rem] lg:flex-row lg:justify-end lg:items-end">
@@ -179,11 +179,11 @@ export default function Home() {
             <div
               className={`text-lg flex justify-start items-center gap-2 mt-16 w-full md:w-4/5 lg:w-2/3 text-gray-400 ${ubuntu.className}`}
             >
-              I&apos;m a software engineer and designer based in College Park,
-              Maryland. I currently work at JPMC, using machine learning to make
-              their customer support processes more efficient. I also created
+              I&apos;m a software engineer and designer based in Dallas, Texas.
+              I currently work at JPMC, using machine learning to make their
+              customer support processes more efficient. I'm also the founder of
               Prept.Ai, a website that helps people prepare for interviews using
-              the power of Artificial Intelligence.
+              the power of AI.
             </div>
             <div className="flex justify-start items-center gap-6 mt-10 text-gray-500 text-xl">
               <FaLinkedin
@@ -227,8 +227,8 @@ export default function Home() {
                 <ExperienceCard
                   tags={["Spark", "Pandas", "AWS"]}
                   companyName="JP Morgan Chase"
-                  dates="May 2024 - Aug 2024"
-                  role="SWE Intern"
+                  dates="May 2024 - Present"
+                  role="Software Engineer"
                   roleSpecific="Machine Learning"
                   details="Contributed to the Machine Learning & Intelligent Operations department using Python to work on AI tools that enhance the efficiency of the company’s customer support processes."
                 />
