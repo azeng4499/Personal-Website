@@ -24,7 +24,7 @@ const ExperienceCard = ({
   const [hovered, setHovered] = useState(false);
   return (
     <div
-      className={`w-full rounded-lg p-4 ${
+      className={`w-full rounded-lg p-4 shadow-xl ${
         ubuntu.className
       } border border-gray-700 ${hovered && "bg-zinc-800"} 
       ${hovered ? "text-gray-200" : "text-gray-400"}
@@ -39,11 +39,7 @@ const ExperienceCard = ({
       <div className="w-full">
         <div className={`relative w-8 h-8 ${false && "grayscale"}`}>
           <Image
-            src={
-              companyName == "JP Morgan Chase"
-                ? "/JPMC-logo.png"
-                : "/USDA-logo.png"
-            }
+            src={`/${companyName.toLowerCase()}-logo.png`}
             alt="logo"
             fill
             className="object-cover"

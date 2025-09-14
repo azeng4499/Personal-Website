@@ -177,13 +177,14 @@ export default function Home() {
               )}
             </div>
             <div
-              className={`text-lg flex justify-start items-center gap-2 mt-16 w-full md:w-4/5 lg:w-2/3 text-gray-400 ${ubuntu.className}`}
+              className={`text-lg mt-16 w-full md:w-4/5 lg:w-2/3 text-gray-400 ${ubuntu.className}`}
             >
-              I&apos;m a software engineer and designer based in Dallas, Texas.
-              I currently work at JPMC, using machine learning to make their
-              customer support processes more efficient. I'm also the founder of
-              Prept.Ai, a website that helps people prepare for interviews using
-              the power of AI.
+              I&apos;m a software engineer based in Dallas, Texas. I currently
+              work at <i>Chase</i>, where I help build the core component
+              library that provides consistent, scalable web and mobile
+              applications across the firm. I'm also the founder of{" "}
+              <i>Prept.Ai</i>, a website that helps people prepare for
+              interviews using the power of AI.
             </div>
             <div className="flex justify-start items-center gap-6 mt-10 text-gray-500 text-xl">
               <FaLinkedin
@@ -226,28 +227,36 @@ export default function Home() {
               <div className="flex flex-col gap-4">
                 <ExperienceCard
                   tags={["Spark", "Pandas", "AWS"]}
-                  companyName="JP Morgan Chase"
+                  companyName="Chase"
                   dates="May 2024 - Present"
-                  role="Software Engineer"
+                  role="Software Engineer I"
+                  roleSpecific="Front-end"
+                  details="Contributed to the Machine Learning & Intelligent Operations department using Python to work on AI tools that enhance the efficiency of the company’s customer support processes."
+                />
+                <ExperienceCard
+                  tags={["Javascript", "SpringBoot"]}
+                  companyName="Chase"
+                  dates="May 2023 - Aug 2023"
+                  role="SWE Intern"
                   roleSpecific="Machine Learning"
                   details="Contributed to the Machine Learning & Intelligent Operations department using Python to work on AI tools that enhance the efficiency of the company’s customer support processes."
                 />
                 <ExperienceCard
                   tags={["Javascript", "SpringBoot"]}
-                  companyName="JP Morgan Chase"
+                  companyName="JPMorgan"
                   dates="May 2023 - Aug 2023"
                   role="SWE Intern"
                   roleSpecific="Full Stack"
                   details="Contributed to the Finance Risk & Data Controls department, using React to work on tools that help the company generate quarterly reports and other financial documents."
                 />
-                <ExperienceCard
+                {/* <ExperienceCard
                   tags={["React", "Tailwind"]}
                   companyName="US Dep. of Agriculture"
                   dates="May 2022 - May 2023"
                   role="SWE Intern"
                   roleSpecific="Frontend"
                   details="Aided the design and development of a dashboard where farmers participating in USDA research studies can read and write crop data."
-                />
+                /> */}
                 <div
                   className={`w-full flex justify-center items-center gap-2 bg-zinc-800 py-2 rounded-lg ${ubuntu.className} cursor-pointer`}
                   onClick={() => {
