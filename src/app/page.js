@@ -231,7 +231,7 @@ export default function Home() {
                   dates="May 2024 - Present"
                   role="Software Engineer I"
                   roleSpecific="Front-end"
-                  details="Contributed to the Machine Learning & Intelligent Operations department using Python to work on AI tools that enhance the efficiency of the company’s customer support processes."
+                  details="Contributing to the Manhattan Design System, a core component library used by most Chase platforms to achieve consistent & scalable applications across the firm."
                 />
                 <ExperienceCard
                   tags={["Javascript", "SpringBoot"]}
