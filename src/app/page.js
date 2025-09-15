@@ -228,7 +228,7 @@ export default function Home() {
                 <ExperienceCard
                   tags={["Spark", "Pandas", "AWS"]}
                   companyName="Chase"
-                  dates="May 2024 - Present"
+                  dates="Juli 2025 - Present"
                   role="Software Engineer I"
                   roleSpecific="Front-end"
                   details="Contributing to the Manhattan Design System, a core component library used by most Chase platforms to achieve consistent & scalable applications across the firm."
@@ -236,7 +236,7 @@ export default function Home() {
                 <ExperienceCard
                   tags={["Javascript", "SpringBoot"]}
                   companyName="Chase"
-                  dates="May 2023 - Aug 2023"
+                  dates="May 2024 - Aug 2024"
                   role="SWE Intern"
                   roleSpecific="Machine Learning"
                   details="Contributed to the Machine Learning & Intelligent Operations department using Python to work on AI tools that enhance the efficiency of the company’s customer support processes."
