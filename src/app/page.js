@@ -183,8 +183,8 @@ export default function Home() {
               work at <i>Chase</i>, where I help build the core component
               library that provides consistent, scalable web and mobile
               applications across the firm. I'm also the founder of{" "}
-              <i>Prept.Ai</i>, a website that helps people prepare for
-              interviews using the power of AI.
+              <i>Prept.Ai</i>, an interview preparation platform that leverages
+              AI feedback to help candidates practice and perform better.
             </div>
             <div className="flex justify-start items-center gap-6 mt-10 text-gray-500 text-xl">
               <FaLinkedin
