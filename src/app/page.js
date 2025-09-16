@@ -228,7 +228,7 @@ export default function Home() {
                 <ExperienceCard
                   tags={["Spark", "Pandas", "AWS"]}
                   companyName="Chase"
-                  dates="Juli 2025 - Present"
+                  dates="July 2025 - Present"
                   role="Software Engineer I"
                   roleSpecific="Front-end"
                   details="Contributing to the Manhattan Design System, a core component library used by most Chase platforms to achieve consistent & scalable applications across the firm."
@@ -247,6 +247,7 @@ export default function Home() {
                   dates="May 2023 - Aug 2023"
                   role="SWE Intern"
                   roleSpecific="Full Stack"
+                  padding={false}
                   details="Contributed to the Finance Risk & Data Controls department, using React to work on tools that help the company generate quarterly reports and other financial documents."
                 />
                 {/* <ExperienceCard
@@ -282,9 +283,10 @@ export default function Home() {
                   details="Online platform designed to assist job-seekers in practicing their interview skills. Users to record themselves answering questions and receive AI-generated feedback. Backed by the UMD Dingman Center for Entrepreneurship."
                 />
                 <WorkCard
-                  url={GPTGO_URL}
-                  name="GptGO Chrome Ext."
-                  details="Chrome extension that allows users to access ChatGPT from any webpage without having to switch tabs. Accumulated over 30 thousand users within the first month of launch."
+                  WIP
+                  url={"https://harbor-web-green.vercel.app/"}
+                  name="Harbor Dating"
+                  details="A new kind of dating app built for people who are tired of endless swiping and ghosted matches. Replaces likes and swipes with ranking to create more meaningful connections."
                 />
                 <Link
                   href="/work"

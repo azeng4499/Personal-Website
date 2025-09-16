@@ -2,6 +2,7 @@ import React from "react";
 import { Ubuntu, Ultra, DM_Serif_Text } from "next/font/google";
 import { GoDotFill } from "react-icons/go";
 import Image from "next/image";
+import { LuConstruction } from "react-icons/lu";
 
 const ubuntu = Ubuntu({
   weight: "300",
@@ -18,7 +19,15 @@ const dm_serif = DM_Serif_Text({
   subsets: ["latin"],
 });
 
-const WorkCardLarge = ({ index, imagePath, title, date, details, buttons }) => {
+const WorkCardLarge = ({
+  index,
+  imagePath,
+  title,
+  date,
+  details,
+  buttons,
+  WIP = false,
+}) => {
   return (
     <div>
       <div className="w-full">
@@ -35,6 +44,17 @@ const WorkCardLarge = ({ index, imagePath, title, date, details, buttons }) => {
           style={{ aspectRatio: "1440 / 778" }}
         >
           <Image src={imagePath} alt="logo" fill className="object-cover" />
+          {WIP && (
+            <div className="w-full h-full absolute flex justify-end items-start p-4">
+              <div
+                className="flex justify-center items-center gap-2 text-white px-3 py-1 border-2 border-black rounded-lg font-bold"
+                style={{ backgroundColor: "rgba(0, 0, 0, 0.7)" }}
+              >
+                <LuConstruction className="text-yellow-500" />
+                Work in progress
+              </div>
+            </div>
+          )}
         </div>
         <div className="flex-grow w-full h-fit lg:h-72 lg:ml-10 lg:-mt-6 mt-10">
           <div

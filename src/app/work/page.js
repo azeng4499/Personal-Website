@@ -27,6 +27,20 @@ const page = () => {
           <div className="w-full h-fit mt-36 flex px-6 sm:px-10 md:px-20 flex-col gap-16 md:gap-8 lg:gap-16 mb-20">
             <WorkCardLarge
               index="1"
+              imagePath="/harbor-demo.png"
+              title="Harbor Dating"
+              date="2025"
+              details="A new kind of dating app built for people who are tired of endless swiping and ghosted matches. Replaces likes and swipes with ranking to create more meaningful connections."
+              WIP
+              buttons={[
+                {
+                  url: "https://harbor-web-green.vercel.app/",
+                  name: "Visit Project",
+                },
+              ]}
+            />
+            <WorkCardLarge
+              index="2"
               imagePath="/prept-ai-demo-2.png"
               title="Prept.Ai"
               date="2024"
@@ -34,7 +48,7 @@ const page = () => {
               buttons={[{ url: PREPT_AI_URL, name: "Visit Project" }]}
             />
             <WorkCardLarge
-              index="2"
+              index="3"
               imagePath="/gptgo-demo.png"
               title="GptGo Chrome Ext."
               date="2023"
@@ -44,19 +58,16 @@ const page = () => {
                 { url: GPTGO_URL_GH, name: "View Source Code" },
               ]}
             />
-            {/* <WorkCardLarge
-              index="3"
+            <WorkCardLarge
+              index="4"
               imagePath="/cxucoaching-demo.png"
               title="Cong Xu Coaching"
               date="2022"
               details="Freelanced website for a local life coaching business. Complete end-to-end with a firebase database and booking functionality."
-              buttons={[
-                { url: CXUCOACHING_URL, name: "Visit Page" },
-                { url: CXUCOACHING_URL_GH, name: "View Source Code" },
-              ]}
-            /> */}
+              buttons={[{ url: CXUCOACHING_URL_GH, name: "View Source Code" }]}
+            />
             <WorkCardLarge
-              index="3"
+              index="5"
               imagePath="/brickify-lab-demo.png"
               title="Brickify Lab"
               date="2022"

@@ -20,41 +20,36 @@ const ExperienceCard = ({
   roleSpecific = "",
   details,
   tags = null,
+  padding = true,
 }) => {
   const [hovered, setHovered] = useState(false);
   return (
     <div
-      className={`w-full rounded-lg p-4 shadow-xl ${
-        ubuntu.className
-      } border border-gray-700 ${hovered && "bg-zinc-800"} 
-      ${hovered ? "text-gray-200" : "text-gray-400"}
-      `}
-      onMouseEnter={() => {
-        setHovered(true);
-      }}
-      onMouseLeave={() => {
-        setHovered(false);
-      }}
+      className={`w-full rounded-lg p-4 ${ubuntu.className} border border-zinc-900 bg-zinc-800 text-zinc-200 cursor-pointer hover:bg-zinc-700`}
     >
-      <div className="w-full">
-        <div className={`relative w-8 h-8 ${false && "grayscale"}`}>
-          <Image
-            src={`/${companyName.toLowerCase()}-logo.png`}
-            alt="logo"
-            fill
-            className="object-cover"
-          />
+      <div className="flex h-fit">
+        <div className="mt-1">
+          <div className="w-11 h-11 rounded-xl overflow-hidden flex justify-center items-center border-1 border-zinc-400 ">
+            <div className={`relative ${!padding ? "w-11 h-11" : "w-10 h-10"}`}>
+              <Image
+                src={`/${companyName.toLowerCase()}-logo.png`}
+                alt="logo"
+                fill
+                className="object-cover"
+              />
+            </div>
+          </div>
         </div>
-      </div>
-      <div
-        className={`w-full justify-between items-center flex text-base mt-4`}
-      >
-        <div className={`${ubuntuBold.className}`}>{companyName}</div>
-        <div className="text-sm">{dates}</div>
-      </div>
-      <div className="w-full justify-start items-center flex gap-1 text-sm mt-2 italic">
-        {role} <GoDotFill className="w-2 h-2" />
-        {roleSpecific}
+        <div className="flex-1 pl-4">
+          <div className={`w-full justify-between items-center flex text-base`}>
+            <div className={`${ubuntuBold.className}`}>{companyName}</div>
+            <div className="text-sm">{dates}</div>
+          </div>
+          <div className="w-full justify-start items-center flex gap-1 text-sm mt-2 italic">
+            {role} <GoDotFill className="w-2 h-2" />
+            {roleSpecific}
+          </div>
+        </div>
       </div>
       <div className="w-full justify-start items-center flex gap-1 text-base mt-4">
         {details}
